@@ -81,6 +81,18 @@ var orm = {
         cb(data);
       }
     );
+  },
+
+  delete: function(table, condition, cb) {
+    connection.query('delete from ' + table + ' where ' + condition, function(
+      err,
+      data
+    ) {
+      if (err) {
+        throw err;
+      }
+      cb(data);
+    });
   }
 };
 
