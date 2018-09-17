@@ -96,4 +96,5 @@ var orm = {
   }
 };
 
+// export orm object for the model (burger.js)
 module.exports = orm;
