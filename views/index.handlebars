@@ -6,8 +6,8 @@
       <div class="col s6">
         {{#each burgers}} {{#unless this.devoured}}
         <div>
-          <form action="/api/burgers/{{this.id}}?_method=PUT" method="POST">
-            <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+          <form>
+            <button type="submit" id={{this.id}} class='burgerAvailable'> {{this.burger_name}}</button>
           </form>
         </div>
         {{/unless}} {{/each}}
